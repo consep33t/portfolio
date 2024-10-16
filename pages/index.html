@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+    </style>
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <link rel="stylesheet" href="../style/global.css" />
+    <title>Ageng</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <section class="hero-section">
+      <div class="left-container">
+        <div class="hero-image"></div>
+        <div class="subtitle-container">
+          <div class="subtitle-text">
+            <p>
+              More of my experience and abilities in the<br />
+              summary of the work i have done
+            </p>
+            <h3>Download My CV -></h3>
+          </div>
+          <h1>* NICE TO MEET YOU *</h1>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="name-text">
+          <h1>
+            HELLO, MY NAME IS
+            <div id="name">
+              <h1>AGENG</h1>
+              <span>2001</span>
+            </div>
+            PROGGRAMER<br />FROM<br />INDONESIA.
+          </h1>
+        </div>
+        <div class="spining-text">
+          <div class="preloader">
+            <div class="preloader__ring">
+              <div class="preloader__sector">S</div>
+              <div class="preloader__sector">C</div>
+              <div class="preloader__sector">R</div>
+              <div class="preloader__sector">O</div>
+              <div class="preloader__sector">O</div>
+              <div class="preloader__sector">L</div>
+              <div class="preloader__sector"></div>
+              <div class="preloader__sector">D</div>
+              <div class="preloader__sector">O</div>
+              <div class="preloader__sector">W</div>
+              <div class="preloader__sector">N</div>
+              <div class="preloader__sector"></div>
+              <div class="preloader__sector">*</div>
+              <div class="preloader__sector">*</div>
+              <div class="preloader__sector"></div>
+              <div class="preloader__sector">S</div>
+              <div class="preloader__sector">C</div>
+              <div class="preloader__sector">R</div>
+              <div class="preloader__sector">O</div>
+              <div class="preloader__sector">O</div>
+              <div class="preloader__sector">L</div>
+              <div class="preloader__sector"></div>
+              <div class="preloader__sector">D</div>
+              <div class="preloader__sector">O</div>
+              <div class="preloader__sector">W</div>
+              <div class="preloader__sector">N</div>
+              <div class="preloader__sector"></div>
+              <div class="preloader__sector">*</div>
+              <div class="preloader__sector">*</div>
+              <div class="preloader__sector"></div>
+            </div>
+            <div class="preloader__ring">
+              <div class="preloader__sector">S</div>
+              <div class="preloader__sector">C</div>
+              <div class="preloader__sector">R</div>
+              <div class="preloader__sector">O</div>
+              <div class="preloader__sector">O</div>
+              <div class="preloader__sector">L</div>
+              <div class="preloader__sector"></div>
+              <div class="preloader__sector">D</div>
+              <div class="preloader__sector">O</div>
+              <div class="preloader__sector">W</div>
+              <div class="preloader__sector">N</div>
+              <div class="preloader__sector"></div>
+              <div class="preloader__sector">*</div>
+              <div class="preloader__sector">*</div>
+              <div class="preloader__sector"></div>
+              <div class="preloader__sector">S</div>
+              <div class="preloader__sector">C</div>
+              <div class="preloader__sector">R</div>
+              <div class="preloader__sector">O</div>
+              <div class="preloader__sector">O</div>
+              <div class="preloader__sector">L</div>
+              <div class="preloader__sector"></div>
+              <div class="preloader__sector">D</div>
+              <div class="preloader__sector">O</div>
+              <div class="preloader__sector">W</div>
+              <div class="preloader__sector">N</div>
+              <div class="preloader__sector"></div>
+              <div class="preloader__sector">*</div>
+              <div class="preloader__sector">*</div>
+              <div class="preloader__sector"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      fetch("../pages/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+    <script src="../script/spiningtext.js"></script>
+  </body>
+</html>
