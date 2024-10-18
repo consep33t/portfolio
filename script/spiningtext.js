@@ -1,11 +1,5 @@
-var text = "Loading...";
-var rings = 2;
-var ringSectors = 30;
-
-preloader;
-for (let r = 0; r < rings; ++r) {
-  preloader__ring;
-  for (let s = 0; s < ringSectors; ++s) {
-    preloader__sector = text[s] || "";
-  }
-}
+fetch("../components/spinigText.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("spining-text").innerHTML = data;
+  });

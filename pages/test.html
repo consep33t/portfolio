@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotating Text Circle</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #111;
+        font-family: Arial, sans-serif;
+      }
+
+      .circle-container {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        animation: rotate 15s linear infinite;
+      }
+
+      .circle-text {
+        position: absolute;
+        font-size: 1.5rem;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 300px;
+        height: 300px;
+      }
+
+      .center-icon {
+        font-size: 200px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+      }
+
+      .circle-text:nth-child(1) {
+        transform: rotate(0deg) translateX(140px);
+      }
+      .circle-text:nth-child(2) {
+        transform: rotate(15deg) translateX(140px);
+      }
+      .circle-text:nth-child(3) {
+        transform: rotate(30deg) translateX(140px);
+      }
+      .circle-text:nth-child(4) {
+        transform: rotate(45deg) translateX(140px);
+      }
+      .circle-text:nth-child(5) {
+        transform: rotate(60deg) translateX(140px);
+      }
+      .circle-text:nth-child(6) {
+        transform: rotate(75deg) translateX(140px);
+      }
+      .circle-text:nth-child(7) {
+        transform: rotate(90deg) translateX(140px);
+      }
+      .circle-text:nth-child(8) {
+        transform: rotate(105deg) translateX(140px);
+      }
+      .circle-text:nth-child(9) {
+        transform: rotate(120deg) translateX(140px);
+      }
+      .circle-text:nth-child(10) {
+        transform: rotate(135deg) translateX(140px);
+      }
+      .circle-text:nth-child(11) {
+        transform: rotate(150deg) translateX(140px);
+      }
+      .circle-text:nth-child(12) {
+        transform: rotate(165deg) translateX(140px);
+      }
+      .circle-text:nth-child(13) {
+        transform: rotate(180deg) translateX(140px);
+      }
+      .circle-text:nth-child(14) {
+        transform: rotate(195deg) translateX(140px);
+      }
+      .circle-text:nth-child(15) {
+        transform: rotate(210deg) translateX(140px);
+      }
+      .circle-text:nth-child(16) {
+        transform: rotate(225deg) translateX(140px);
+      }
+      .circle-text:nth-child(17) {
+        transform: rotate(240deg) translateX(140px);
+      }
+      .circle-text:nth-child(18) {
+        transform: rotate(255deg) translateX(140px);
+      }
+      .circle-text:nth-child(19) {
+        transform: rotate(270deg) translateX(140px);
+      }
+      .circle-text:nth-child(20) {
+        transform: rotate(285deg) translateX(140px);
+      }
+      .circle-text:nth-child(21) {
+        transform: rotate(300deg) translateX(140px);
+      }
+      .circle-text:nth-child(22) {
+        transform: rotate(315deg) translateX(140px);
+      }
+      .circle-text:nth-child(23) {
+        transform: rotate(330deg) translateX(140px);
+      }
+      .circle-text:nth-child(24) {
+        transform: rotate(345deg) translateX(140px);
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle-container">
+      <div class="circle-text">S</div>
+      <div class="circle-text">C</div>
+      <div class="circle-text">R</div>
+      <div class="circle-text">O</div>
+      <div class="circle-text">O</div>
+      <div class="circle-text">L</div>
+      <div class="circle-text">-</div>
+      <div class="circle-text">D</div>
+      <div class="circle-text">O</div>
+      <div class="circle-text">W</div>
+      <div class="circle-text">N</div>
+      <div class="circle-text">-</div>
+      <div class="circle-text">S</div>
+      <div class="circle-text">C</div>
+      <div class="circle-text">R</div>
+      <div class="circle-text">O</div>
+      <div class="circle-text">O</div>
+      <div class="circle-text">L</div>
+      <div class="circle-text">-</div>
+      <div class="circle-text">D</div>
+      <div class="circle-text">O</div>
+      <div class="circle-text">W</div>
+      <div class="circle-text">N</div>
+      <div class="circle-text">-</div>
+    </div>
+    <div class="center-icon">✦</div>
+  </body>
+</html>
