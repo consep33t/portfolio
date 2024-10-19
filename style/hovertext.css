@@ -1,0 +1,54 @@
+.container {
+  font-size: 8em;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  background-color: transparent;
+}
+
+.text {
+  top: 0;
+  left: 0;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.text span {
+  display: inline-block;
+  transition: transform 0.5s ease, color 0.5s ease;
+  transition-delay: calc(0.05s * var(--index));
+  font-size: 8rem;
+  font-weight: 900;
+  font-style: italic;
+  color: #ffffff;
+  font-family: "Lato", serif;
+}
+
+.text-1 {
+  transform: translateY(-13%);
+}
+
+.text-2 {
+  transform: translateY(-13%);
+}
+
+.container:hover .text-1 {
+  transform: translateY(-100%);
+}
+
+.container:hover .text-2 {
+  transform: translateY(-13%);
+}
+
+.container:hover .text-1 span {
+  transform: translateY(-100%);
+  color: #fe8008;
+}
+
+.container:hover .text-2 span {
+  transform: translateY(-110%);
+  color: #fe8008;
+}

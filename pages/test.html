@@ -3,154 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rotating Text Circle</title>
+    <title>Rotating Text Animation</title>
     <style>
       body {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #111;
-        font-family: Arial, sans-serif;
+        font-family: "Montserrat", sans-serif;
+        background-color: #ffffff;
       }
 
-      .circle-container {
-        position: relative;
-        width: 300px;
-        height: 300px;
-        animation: rotate 15s linear infinite;
-      }
-
-      .circle-text {
-        position: absolute;
-        font-size: 1.5rem;
-        color: white;
+      .container {
+        font-size: 5em;
+        color: #000;
         text-transform: uppercase;
-        letter-spacing: 2px;
-        width: 300px;
-        height: 300px;
+        text-decoration: none;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
       }
 
-      .center-icon {
-        font-size: 200px;
-        color: white;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -55%);
+      .text {
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        transition: transform 0.5s ease;
       }
 
-      .circle-text:nth-child(1) {
-        transform: rotate(0deg) translateX(140px);
-      }
-      .circle-text:nth-child(2) {
-        transform: rotate(15deg) translateX(140px);
-      }
-      .circle-text:nth-child(3) {
-        transform: rotate(30deg) translateX(140px);
-      }
-      .circle-text:nth-child(4) {
-        transform: rotate(45deg) translateX(140px);
-      }
-      .circle-text:nth-child(5) {
-        transform: rotate(60deg) translateX(140px);
-      }
-      .circle-text:nth-child(6) {
-        transform: rotate(75deg) translateX(140px);
-      }
-      .circle-text:nth-child(7) {
-        transform: rotate(90deg) translateX(140px);
-      }
-      .circle-text:nth-child(8) {
-        transform: rotate(105deg) translateX(140px);
-      }
-      .circle-text:nth-child(9) {
-        transform: rotate(120deg) translateX(140px);
-      }
-      .circle-text:nth-child(10) {
-        transform: rotate(135deg) translateX(140px);
-      }
-      .circle-text:nth-child(11) {
-        transform: rotate(150deg) translateX(140px);
-      }
-      .circle-text:nth-child(12) {
-        transform: rotate(165deg) translateX(140px);
-      }
-      .circle-text:nth-child(13) {
-        transform: rotate(180deg) translateX(140px);
-      }
-      .circle-text:nth-child(14) {
-        transform: rotate(195deg) translateX(140px);
-      }
-      .circle-text:nth-child(15) {
-        transform: rotate(210deg) translateX(140px);
-      }
-      .circle-text:nth-child(16) {
-        transform: rotate(225deg) translateX(140px);
-      }
-      .circle-text:nth-child(17) {
-        transform: rotate(240deg) translateX(140px);
-      }
-      .circle-text:nth-child(18) {
-        transform: rotate(255deg) translateX(140px);
-      }
-      .circle-text:nth-child(19) {
-        transform: rotate(270deg) translateX(140px);
-      }
-      .circle-text:nth-child(20) {
-        transform: rotate(285deg) translateX(140px);
-      }
-      .circle-text:nth-child(21) {
-        transform: rotate(300deg) translateX(140px);
-      }
-      .circle-text:nth-child(22) {
-        transform: rotate(315deg) translateX(140px);
-      }
-      .circle-text:nth-child(23) {
-        transform: rotate(330deg) translateX(140px);
-      }
-      .circle-text:nth-child(24) {
-        transform: rotate(345deg) translateX(140px);
+      .text span {
+        display: inline-block;
+        transition: transform 0.5s ease, color 0.5s ease;
       }
 
-      @keyframes rotate {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
+      .text-1 {
+        transform: translateY(0);
+      }
+
+      .text-2 {
+        transform: translateY(0);
+      }
+
+      .container:hover .text-1 {
+        transform: translateY(-100%);
+      }
+
+      .container:hover .text-2 {
+        transform: translateY(0);
+      }
+
+      .text span {
+        transition-delay: calc(0.05s * var(--index));
+      }
+
+      .container:hover .text-1 span {
+        transform: translateY(-100%);
+        color: #fe8008;
+      }
+
+      .container:hover .text-2 span {
+        transform: translateY(-100%);
+        color: #fe8008;
       }
     </style>
   </head>
   <body>
-    <div class="circle-container">
-      <div class="circle-text">S</div>
-      <div class="circle-text">C</div>
-      <div class="circle-text">R</div>
-      <div class="circle-text">O</div>
-      <div class="circle-text">O</div>
-      <div class="circle-text">L</div>
-      <div class="circle-text">-</div>
-      <div class="circle-text">D</div>
-      <div class="circle-text">O</div>
-      <div class="circle-text">W</div>
-      <div class="circle-text">N</div>
-      <div class="circle-text">-</div>
-      <div class="circle-text">S</div>
-      <div class="circle-text">C</div>
-      <div class="circle-text">R</div>
-      <div class="circle-text">O</div>
-      <div class="circle-text">O</div>
-      <div class="circle-text">L</div>
-      <div class="circle-text">-</div>
-      <div class="circle-text">D</div>
-      <div class="circle-text">O</div>
-      <div class="circle-text">W</div>
-      <div class="circle-text">N</div>
-      <div class="circle-text">-</div>
+    <div class="container">
+      <div class="text text-1">
+        <span style="--index: 0">W</span>
+        <span style="--index: 1">E</span>
+        <span style="--index: 2">B</span>
+        <span style="--index: 3">S</span>
+        <span style="--index: 4">I</span>
+        <span style="--index: 5">D</span>
+        <span style="--index: 6">E</span>
+        <span style="--index: 7">.</span>
+        <span style="--index: 8">!</span>
+        <span style="--index: 9">!</span>
+      </div>
+      <div class="text text-2">
+        <span style="--index: 0">D</span>
+        <span style="--index: 1">E</span>
+        <span style="--index: 2">V</span>
+        <span style="--index: 3">E</span>
+        <span style="--index: 4">L</span>
+        <span style="--index: 5">O</span>
+        <span style="--index: 6">P</span>
+        <span style="--index: 7">M</span>
+        <span style="--index: 8">E</span>
+        <span style="--index: 9">N</span>
+        <span style="--index: 10">T</span>
+      </div>
     </div>
-    <div class="center-icon">✦</div>
   </body>
 </html>

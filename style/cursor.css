@@ -1,7 +1,7 @@
 .cursor {
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -10,11 +10,12 @@
   background: transparent;
   pointer-events: none;
   z-index: 111;
-  box-shadow: #7f08fe9e 0 0 6px 6px;
-  border: 8px solid #7f08fe9e;
+  box-shadow: #7f08fe9e 0 0 25px 25px;
+  border: 30px solid #7f08fe9e;
   transition: all 0.5s ease-out;
-  animation: moveCursor1 1s infinite alternate;
+  animation: moveCursor1 1.5s infinite alternate;
   pointer-events: none;
+  mix-blend-mode: difference;
 }
 
 .cursor1 {
@@ -27,19 +28,13 @@
   left: 50%;
   transform: translate(-50%);
   border-radius: 50%;
-  background-color: #7f08fe9e;
+  background-color: #7f08fe;
   pointer-events: none;
-  z-index: 111;
-  box-shadow: #7f08fe9e 0 0 3px 3px;
-  border: 2px solid #7f08fe9e;
+  z-index: 999;
+  box-shadow: #7f08fe9e 0 0 9px 9px;
+  border: 2px solid #7f08fe;
   transition: all 0.2s ease-out;
   animation: moveCursor1 1s infinite alternate;
-}
-
-.expand {
-  background: transparent;
-  animation: moveCursor2 0.5s forwards;
-  border: 1px solid #000;
 }
 
 @keyframes moveCursor1 {

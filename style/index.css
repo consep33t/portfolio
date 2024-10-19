@@ -8,7 +8,7 @@
   font-family: lato;
   padding-left: 5rem;
   padding-right: 5rem;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .left-container {
@@ -28,6 +28,7 @@
   height: 22.1%;
   filter: grayscale(100%);
   transition: transform 0.5s ease, filter 0.5s ease;
+  z-index: 120;
 }
 
 .left-container .hero-image:hover {
@@ -45,33 +46,85 @@
   margin-top: -1.3rem;
 }
 
+.right-container {
+  z-index: 10;
+}
+
+.hero-text-container {
+  display: flex;
+}
+.hero-text {
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.8s ease;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.hero-text:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.hero-text:nth-child(1) {
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) 0.1s,
+    opacity 0.8s ease 0.1s;
+}
+
+.hero-text:nth-child(2) {
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) 0.2s,
+    opacity 0.8s ease 0.2s;
+}
+
+.hero-text:nth-child(3) {
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) 0.3s,
+    opacity 0.8s ease 0.3s;
+}
+
+.hero-text:nth-child(4) {
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) 0.4s,
+    opacity 0.8s ease 0.4s;
+}
+
+.hero-text:nth-child(5) {
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) 0.5s,
+    opacity 0.8s ease 0.5s;
+}
+
+.hero-text:nth-child(6) {
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) 0.6s,
+    opacity 0.8s ease 0.6s;
+}
+
 .right-container h1 {
   margin: 0;
   font-size: 8rem;
   font-family: "Lato", serif;
   font-weight: 900;
   color: #ffffff;
-  line-height: 7.5rem;
+  line-height: 8rem;
 }
 
-.right-container span {
+#name h2 {
+  margin: 0;
+  font-size: 8rem;
+  font-family: playfair display;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 7.5rem;
+  background-color: #fe8008;
+  padding: 0px 12px 12px 12px;
+  text-align: center;
+  color: #0f0f0f;
+  transform: translate(0.3rem, 0);
+}
+
+#name span {
   font-weight: 400;
   font-size: 1.3rem;
-  transform: translate(0, -3.4rem);
   margin-left: 2rem;
 }
 
 .right-container #name {
   display: flex;
-}
-
-.right-container #name h1 {
-  margin: 0;
-  background-color: #fe8008;
-  padding: 1px;
-  font-family: playfair display;
-  font-weight: 700;
-  color: #000000;
 }
 
 .circle-container {
