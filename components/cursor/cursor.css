@@ -10,15 +10,16 @@
   background: transparent;
   pointer-events: none;
   z-index: 111;
-  box-shadow: #7f08fe9e 0 0 25px 25px;
-  border: 30px solid #7f08fe9e;
+  box-shadow: #e8e7e7 0 0 50px 50px;
   transition: all 0.5s ease-out;
+  background-color: transparent;
   animation: moveCursor1 1.5s infinite alternate;
   pointer-events: none;
   mix-blend-mode: difference;
 }
 
 .cursor1 {
+  mix-blend-mode: difference;
   pointer-events: none;
   display: block;
   width: 16px;
@@ -28,11 +29,10 @@
   left: 50%;
   transform: translate(-50%);
   border-radius: 50%;
-  background-color: #7f08fe;
+  background-color: #e8e7e7;
   pointer-events: none;
   z-index: 999;
-  box-shadow: #7f08fe9e 0 0 9px 9px;
-  border: 2px solid #7f08fe;
+  box-shadow: #e8e7e7 0 0 9px 9px;
   transition: all 0.2s ease-out;
   animation: moveCursor1 1s infinite alternate;
 }

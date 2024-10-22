@@ -7,16 +7,20 @@
       @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
     </style>
     <link rel="stylesheet" href="../style/index.css" />
-    <link rel="stylesheet" href="../style/navbar.css" />
+    <link rel="stylesheet" href="../components/navBar/navbar.css" />
     <link rel="stylesheet" href="../style/global.css" />
-    <link rel="stylesheet" href="../style/spiningText.css" />
-    <link rel="stylesheet" href="../style/cursor.css" />
-    <link rel="stylesheet" href="../style/hovertext.css" />
+    <link rel="stylesheet" href="../components/spiningText/spiningText.css" />
+    <link rel="stylesheet" href="../components/cursor/cursor.css" />
+    <link rel="stylesheet" href="../components/hoverText/hovertext.css" />
+    <link
+      rel="stylesheet"
+      href="../components/about-section/aboutComponents.css"
+    />
     <title>Ageng</title>
+    <script src="../components/navBar/navbar.js"></script>
   </head>
   <body>
-    <div class="cursor"></div>
-    <div class="cursor1"></div>
+    <div id="cursor"></div>
     <div id="navbar"></div>
     <section class="hero-section">
       <div class="left-container">
@@ -75,14 +79,17 @@
           <h1 class="hero-text">I</h1>
           <h1 class="hero-text">A</h1>
           <h1 class="hero-text">.</h1>
+        </div>
       </div>
       <div class="circle-container">
         <div id="spining-text"></div>
       </div>
     </section>
-    <script src="../script/navbar.js"></script>
-    <script src="../script/spiningText.js"></script>
-    <script src="../script/cursor.js"></script>
-    <script src="../script/hovertext.js"></script>
+    <div id="about-section"></div>
+    <script src="../components/spiningText/spiningText.js"></script>
+    <script src="../components/cursor/cursor.js"></script>
+    <script src="../components/hoverText/hovertext.js"></script>
+    <script src="../components/about-section/aboutComponents.js"></script>
+    <script src="../components/hero-section/heroSection.js"></script>
   </body>
 </html>

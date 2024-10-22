@@ -3,8 +3,7 @@
   justify-content: center;
   align-items: start;
   height: 100vh;
-  background-color: #0f0f0f;
-  color: #ffffff;
+  color: #eaeeef;
   font-family: lato;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -99,7 +98,7 @@
   font-size: 8rem;
   font-family: "Lato", serif;
   font-weight: 900;
-  color: #ffffff;
+  color: #eaeeef;
   line-height: 8rem;
 }
 
@@ -108,12 +107,11 @@
   font-size: 8rem;
   font-family: playfair display;
   font-weight: 900;
-  color: #ffffff;
   line-height: 7.5rem;
-  background-color: #fe8008;
+  background-color: #f33b02;
   padding: 0px 12px 12px 12px;
   text-align: center;
-  color: #0f0f0f;
+  color: #0d0d0f;
   transform: translate(0.3rem, 0);
 }
 
@@ -131,4 +129,13 @@
   position: absolute;
   right: 5%;
   bottom: 5%;
+}
+
+/* about sections */
+#about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
