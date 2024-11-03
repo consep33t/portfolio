@@ -4,9 +4,16 @@ nav {
   align-items: center;
   padding-top: 1vw;
   padding-bottom: 1vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 5rem;
+  padding-right: 5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  mix-blend-mode: difference;
+  background-color: transparent;
 }
 
 nav .left-nav {
@@ -43,7 +50,7 @@ nav li {
 nav a {
   color: #e8e7e7;
   text-decoration: none;
-  font-family: lato;
+  font-size: 1.2rem;
 }
 
 nav li a::after {

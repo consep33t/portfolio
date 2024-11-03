@@ -1,0 +1,51 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 10vh;
+  color: #f0f0f0;
+}
+
+footer .copyright {
+  font-size: 1.2rem;
+  font-family: lato;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+footer .sosial {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+footer .sosial p {
+  font-size: 2rem;
+  color: #f0f0f0;
+  font-family: "lato" serif;
+  font-weight: 200;
+}
+
+footer .sosial p::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #f33b02;
+  transition: width 0.5s ease;
+}
+
+footer .sosial p:hover::after {
+  width: 100%;
+}

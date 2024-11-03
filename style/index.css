@@ -1,13 +1,15 @@
 .hero-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: start;
-  height: 100vh;
+  width: 100%;
+  height: 85vh;
   color: #eaeeef;
   font-family: lato;
   padding-left: 5rem;
   padding-right: 5rem;
-  gap: 3rem;
+  gap: 1rem;
+  margin-top: 10vh;
 }
 
 .left-container {
@@ -17,13 +19,13 @@
   width: 30%;
   height: 100%;
   overflow: hidden;
+  margin: 1rem;
 }
 
 .left-container .hero-image {
   width: 100%;
   background-image: url("../public/images/WhatsApp\ Image\ 2024-05-16\ at\ 09.23.26.jpeg");
   background-size: cover;
-  margin: 1rem;
   height: 22.1%;
   filter: grayscale(100%);
   transition: transform 0.5s ease, filter 0.5s ease;
@@ -126,9 +128,8 @@
 }
 
 .circle-container {
-  position: absolute;
-  right: 5%;
-  bottom: 5%;
+  width: 20%;
+  align-self: self-end;
 }
 
 /* about sections */
@@ -138,4 +139,15 @@
   align-items: center;
   width: 100%;
   height: 100vh;
+}
+
+/* project-section */
+
+#project-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #1b2155;
 }

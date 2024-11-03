@@ -1,0 +1,120 @@
+.project-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  color: #f0f0f0;
+}
+
+.top-project-section,
+.bottom-project-section {
+  width: 100%;
+  height: 50%;
+  border-bottom: 2px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.top-project-section {
+  border-top: 2px solid #f0f0f0;
+}
+
+.year {
+  display: flex;
+  align-items: end;
+  height: 65%;
+}
+
+.year p {
+  font-size: 1.2rem;
+  font-family: lato;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(100%);
+  transition: transform 0.5s ease, filter 0.5s ease;
+  width: 40%;
+  height: 80%;
+}
+
+.image:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.top-project-section .image {
+  background-image: url("../../public/images/anime\ list.PNG");
+}
+
+.bottom-project-section .image {
+  background-image: url("../../public/images/aplikasi\ pemesanan.PNG");
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 80%;
+}
+
+.title h1 {
+  font-size: 3.5rem;
+  font-family: playfair display;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.title p {
+  font-size: 1.2rem;
+  font-family: lato;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.top-project-section .title {
+  text-align: start;
+}
+
+.bottom-project-section .title {
+  text-align: end;
+}
+
+.title a {
+  font-size: 1.2rem;
+  font-family: playfair display;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #f0f0f0;
+  text-decoration: none;
+  position: relative;
+}
+
+.title a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f33b02;
+  transition: width 0.3s ease;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+}
+
+.title a:hover::after {
+  width: 100%;
+}

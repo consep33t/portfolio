@@ -5,13 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../components/navBar/navbar.css" />
     <link rel="stylesheet" href="../components/cursor/cursor.css" />
+    <link rel="stylesheet" href="../components/footer/footer.css" />
+    <link rel="stylesheet" href="../style/contact.css" />
     <link rel="stylesheet" href="../style/global.css" />
-    <title>Document</title>
+    <title>A,P-Contact</title>
   </head>
   <body>
     <div class="cursor"></div>
     <div class="cursor1"></div>
     <div id="navbar"></div>
+    <div class="contact-section">
+      <h1>Get in Touch</h1>
+      <p>Feel free to reach out for collaboration or any questions!</p>
+
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/ageng-prayoga-789b652a9/"
+          target="_blank"
+          ><img src="../public/images/linkedin-svgrepo-com.svg" alt="LinkedIn"
+        /></a>
+        <a href="https://github.com/consep33t" target="_blank"
+          ><img src="../public/images/icons8-github-50.png" alt="GitHub"
+        /></a>
+      </div>
+    </div>
+
+    <footer id="footer"></footer>
+    <script src="../script/contact.js"></script>
+    <script src="../components/footer/footer.js"></script>
     <script src="../components/cursor/cursor.js"></script>
     <script src="../components/navBar/navbar.js"></script>
   </body>

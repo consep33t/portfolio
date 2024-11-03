@@ -1,11 +1,11 @@
-.circle-container {
+.circle-container-text {
   width: 235px;
   height: 235px;
   animation: rotate 20s linear infinite;
   overflow: hidden;
 }
 
-.circle-container:hover {
+.circle-container-text:hover {
   animation-play-state: paused;
 }
 
