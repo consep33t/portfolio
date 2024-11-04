@@ -15,6 +15,9 @@ app.use("/public", express.static(path.join(__dirname, "public")));
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
+app.use((req, res) => {
+  res.status(404).send("404: Not Found");
+});
 
 // Jalankan server
 app.listen(PORT, () => {
